@@ -2,12 +2,12 @@
 
 
 ## EXECUTION
-run single test:
+Run single test:
 - robot --outputdir results  tests/TC_001_Get_Request.robot
 run whole folder:
 - robot --outputdir results  tests
 
-## PARALLEL EXECUTION
+Parallel execution
 - pabot tests/TC_001_Get_Request.robot
 - pabot --testlevelsplit  tests
 

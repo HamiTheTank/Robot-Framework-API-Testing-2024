@@ -4,8 +4,8 @@ Resource    ${CURDIR}/../resources/common.robot
 *** Variables ***
 ${reqreS_url}              https://reqres.in/
 ${guthub_url}              https://api.github.com/
-${github_token}            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    #30 days expiration
-${github_invalid_token}    XXX_dXjUxdFNgd6S6mTsZSpertemFTB37Q0s1ZZZ
+${github_token}            XXX    #obtain token from github-dev settings
+${github_invalid_token}    XXX    #use any random string. it should fail
 
 
 *** Test Cases ***

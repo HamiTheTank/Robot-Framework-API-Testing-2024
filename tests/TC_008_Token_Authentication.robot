@@ -5,7 +5,6 @@ Resource    ${CURDIR}/../resources/common.robot
 ${reqreS_url}              https://reqres.in/
 ${guthub_url}              https://api.github.com/
 
-
 *** Test Cases ***
 Login
     Create Session  reqres  ${reqreS_url}

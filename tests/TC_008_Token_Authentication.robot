@@ -4,8 +4,8 @@ Resource    ${CURDIR}/../resources/common.robot
 *** Variables ***
 ${reqreS_url}              https://reqres.in/
 ${guthub_url}              https://api.github.com/
-${github_token}            XXX    #obtain token from github-dev settings
-${github_invalid_token}    XXX    #use any random string. it should fail
+#${github_token}            XXX    #obtain token from github-dev settings
+#${github_invalid_token}    XXX    #use any random string. it should fail
 
 
 *** Test Cases ***

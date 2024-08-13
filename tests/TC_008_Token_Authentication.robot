@@ -5,6 +5,7 @@ Resource    ${CURDIR}/../resources/common.robot
 ${reqreS_url}              https://reqres.in/
 ${guthub_url}              https://api.github.com/
 
+
 *** Test Cases ***
 Login
     Create Session  reqres  ${reqreS_url}
@@ -34,7 +35,7 @@ View Github Repo With Inalid Token Authentication
 
 *** Keywords ***
 Login and Get Token
-    ${login_json}=  Create Dictionary  email=eve.holt@reqres.in  password=cityslicka
+    #${login_json}=  Create Dictionary  email=eve.holt@reqres.in  password=cityslicka
     ${login_response}=  POST On Session  reqres  /api/login  json=${login_json}  headers=&{content_type_json}
     ${token}=  Set Variable  ${null}
     ${response_json}=  Convert String To Json  ${login_response.content}

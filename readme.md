@@ -3,13 +3,13 @@
 
 ## EXECUTION
 run single test:
-robot --outputdir results  tests/TC_001_Get_Request.robot
+- robot --outputdir results  tests/TC_001_Get_Request.robot
 run whole folder:
-robot --outputdir results  tests
+- robot --outputdir results  tests
 
 ## PARALLEL EXECUTION
-pabot tests/TC_001_Get_Request.robot
-pabot --testlevelsplit  tests
+- pabot tests/TC_001_Get_Request.robot
+- pabot --testlevelsplit  tests
 
 ## REQUIREMENTS
 python 3.12.4

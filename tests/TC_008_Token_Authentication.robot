@@ -4,7 +4,7 @@ Resource    ${CURDIR}/../resources/common.robot
 *** Variables ***
 ${reqreS_url}              https://reqres.in/
 ${guthub_url}              https://api.github.com/
-#${github_token}            XXX    #obtain token from github-dev settings
+#${github_token}            XXX    #obtain token from github->dev settings
 #${github_invalid_token}    XXX    #use any random string. it should fail
 
 
@@ -17,14 +17,14 @@ Login
 
 View Github Repo With Valid Token Authentication
     Create Session  github  ${guthub_url}
-    &{header}=  Create Dictionary  Content-Type=application/json  Authorization=Bearer ${github_token}
+    &{header}=  Create Dictionary  Content-Type=application/json  Authorization=Bearer INSERT TOKEN HERE
     ${valid_get_request}=  GET On Session  github  /repos/HamiTheTank/test_framework  headers=&{header}
     Log To Console  ${valid_get_request.content}
     Should Be Equal As Integers    ${valid_get_request.status_code}    200
 
 View Github Repo With Inalid Token Authentication    
     Create Session  github  ${guthub_url}
-    ${header}=  Create Dictionary  Content-Type=application/json  Authorization=Bearer ${github_invalid_token}
+    ${header}=  Create Dictionary  Content-Type=application/json  Authorization=Bearer INSERT TOKEN HERE
 
     TRY
         ${error_msg}=  Run Keyword And Expect Error  STARTS: HTTPError  GET On Session  github  /repos/HamiTheTank/test_framework  headers=&{header}

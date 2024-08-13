@@ -14,7 +14,7 @@ Parallel execution
 ## REQUIREMENTS
 python 3.12.4
 
-### PIP LIST (installed python packages)##
+#### PIP LIST (installed python packages)
 - attrs                      24.2.0
 - certifi                    2024.7.4
 - charset-normalizer         3.3.2

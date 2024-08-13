@@ -1,21 +1,20 @@
-#Rest API testing With Robot Framework & Python
+# Rest API testing With Robot Framework & Python
 
 
-##EXECUTION
+## EXECUTION
 run single test:
 robot --outputdir results  tests/TC_001_Get_Request.robot
 run whole folder:
 robot --outputdir results  tests
 
-##PARALLEL EXECUTION
+## PARALLEL EXECUTION
 pabot tests/TC_001_Get_Request.robot
 pabot --testlevelsplit  tests
 
-##REQUIREMENTS
+## REQUIREMENTS
 python 3.12.4
 
-##PIP LIST (installed python packages)##
--------------------------- ---------
+## PIP LIST (installed python packages)##
 - attrs                      24.2.0
 - certifi                    2024.7.4
 - charset-normalizer         3.3.2
